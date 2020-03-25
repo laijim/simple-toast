@@ -1,0 +1,32 @@
+{
+    "name": "laijim/simple-toast",
+    "description": "an lightweight native javascript toast library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JIM LAI",
+            "email": "kakujing@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^6.0|^7.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laijim\\SimpleToast\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laijim\\SimpleToast\\SimpleToastServiceProvider"
+            ],
+            "aliases": {
+                "SimpleToast": "Laijim\\SimpleToast\\Facades\\SimpleToast"
+            }
+        }
+    }
+}
